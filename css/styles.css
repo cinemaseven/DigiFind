@@ -1148,3 +1148,12 @@ fieldset {
         font-size: .8rem;
     }
 }
+
+/* ========================================================================== */
+/* MEDIA QUERY FOR PRINT */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
