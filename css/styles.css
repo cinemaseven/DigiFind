@@ -1,0 +1,1150 @@
+/* ========================= VARIABLES ========================= */
+:root {
+    /* ========================= COLORS ========================= */
+    --first-color: 255, 97, 82;
+    --second-color: 0, 128, 128;
+    --third-color: 255, 255, 255;
+    --first-accent: 255, 111, 97;
+    --second-accent: 255, 131, 119;
+    --third-accent: 255, 178, 171;
+
+    /* ========================= FONTS ========================= */
+    --main-font: 'Judson', serif;
+    --second-font: 'Fasthand', serif;
+    --third-font: 'Habibi', serif;
+}
+
+/* ========================= CSS RESET ========================= */
+body, header, nav, main, img, section, footer, img, h3, p, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* ========================= BOX SIZING FOR ALL ELEMENTS =========================*/
+* {
+    box-sizing: border-box;
+}
+
+  /* ========================= HEADER & NAVIGATION ========================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    background-color: rgb(var(--second-color));
+    border-bottom: 3px solid rgb(var(--first-color));
+    z-index: 1000;
+}
+
+header a img {
+    max-height: 100%; 
+    width: auto;
+    padding-left: 60px;
+}
+
+nav {
+    position: fixed;
+    right: 80px;
+    top: 80px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    white-space: nowrap;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+}
+
+nav li {
+    font-size: 2rem;
+    font-family: var(--main-font);
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(var(--third-color));
+    display: block;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* ========================= FOOTER ========================= */
+footer {
+    width: 100%;
+    height: 170px;
+    margin-top: 60px;
+    color: rgb(var(--third-color));
+    background-color: rgb(var(--second-color));
+    border-top: 3px solid rgb(var(--first-color));
+}
+
+footer p {
+    color: rgb(var(--third-color));
+    font-family: var(--third-font);
+    padding: 0;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#footer-left {
+    padding-left: 130px;
+}
+
+#footer-right {
+    padding: 40px 130px 0 0;
+}
+
+#footer-logo h3 {
+    font-size: 5rem;
+    margin-top: 30px;
+    font-family: var(--main-font);
+    text-shadow: 4px 4px rgba(0,0,0, .25);
+}
+
+#footer-logo p {
+    margin-left: 40px;
+    font-size: 1rem;
+}
+
+#footer-right p {
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+    margin-left: 65px;
+}
+
+#copyright p {
+    font-size: 1rem;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+
+#socials {
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+/* ========================= MAIN =========================*/
+/* ========================= INDEX: INTRO VIDEO & PICTURES =========================*/
+#intro-vid {
+    margin-top: 200px;
+}
+
+#intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 75%;
+    height: auto;
+    padding: 5px;
+    border: 4px solid rgb(var(--second-color));
+    box-shadow: 3px 5px 5px 6px rgba(0, 0, 0, 0.25)
+}
+
+/* ========================= INDEX: DESCRIPTION =========================*/
+#about {
+    text-align: center;
+    background-color: rgba(var(--first-accent), 0.10);
+    box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    padding: 100px 0 250px 0;
+    margin-top: 75px;
+}
+
+#about h1 {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 9rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 5px 4px rgba(0,0,0, .25);
+    color: rgb(var(--first-color));
+    border-bottom: 3px solid rgb(var(--first-color));
+}
+
+#about p {
+    font-size: 1.8rem;
+    color: rgb(var(--first-accent));
+    padding: 0 200px;
+}
+
+/* ========================= INDEX: TOP 3 LISTS =========================*/
+#top-three {
+    padding-top: 75px;
+}
+
+.top-list {
+    width: 97.5%; 
+    height: auto;
+    margin: 0 0 60px 25px;
+    padding-bottom: 25px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.10); 
+    box-shadow: 3px 5px 5px 6px rgba(0, 0, 0, 0.25);
+}
+
+h4 {
+    font-size: 2.2rem;
+    font-family: var(--main-font);
+    color: rgb(var(--first-color));
+    padding: 10px 0 0 20px;
+}
+
+#trends, #affordable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cam-container {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    text-align: center;
+    width: 32%;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgba(var(--first-accent), 0.10);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.view-reco-btn {
+    text-align: center;
+    padding: 20px;
+}
+
+.view-reco-btn button {
+    background-color: rgb(var(--first-accent));
+    color: rgb(var(--third-color));
+    border: none;
+    padding: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: var(--third-font);
+}
+
+.cam {
+    float: left;
+    width: 40%;
+    height: auto;
+}
+
+.cam-container a, .camera-item a {
+    text-decoration: none;
+}
+
+.cam-text h2, .cam-text h4, .cam-text p, .camera-text h2, .camera-text p {
+    color: rgb(var(--second-color));
+}
+
+.cam-text h2, .cam-text h4, .camera-text h2,  .camera-text #price {
+    font-family: var(--main-font);
+    margin-top: 0;
+}
+
+.cam-text h2, .camera-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.cam-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    
+}
+
+.cam-text p, .camera-text p {
+    font-family: var(--third-font);
+    font-size: 1rem;
+}
+
+.cam-text h2:hover, .cam-text h4:hover, .cam-text p:hover, .camera-links p:hover {
+    text-decoration: underline;
+}
+
+/* ========================= VIEW: TAGLINE ========================= */
+#tagline-container {
+    width: 100%;
+    height: 81.5vh;
+    text-align: center;
+    background: linear-gradient(104deg, #FFD2CD 4.87%, #FCE1DE 30.3%, #E5FFFF 66.71%, #ACFFFF 92.49%);
+    border-bottom: 4px solid rgb(var(--second-color));
+    margin-top: 170px;
+}
+
+#tagline h1 {
+    font-family: var(--main-font);
+    font-size: 7rem;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    color: rgb(var(--first-color));
+    padding-top: 280px;
+    margin: 0;
+}
+
+#tagline h2 {
+    font-family: var(--second-font);
+    font-size: 3rem;
+    font-weight: normal;
+    color: rgb(var(--first-accent));
+    margin: 0;
+}
+
+/* ========================= VIEW: CAMERA LIST ========================= */
+.camera-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 70px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.camera-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(var(--first-accent), 0.10);
+    border-radius: 15px;    
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.camera-item:hover, .cam-container:hover {
+    transform: translateY(-5px);
+}
+
+.camera-item img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.camera-text {
+    text-align: center;
+}
+
+.camera-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.camera-links p {
+    font-style: italic;
+    padding-top: 25px;
+}
+
+.camera-text #price {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.prev-next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#prevBtn, #nextBtn {
+    font-family: var(--third-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#prevBtn {
+    margin-left: 50px;
+}
+
+#nextBtn {
+    margin-right: 50px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+}
+
+.prev-next button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 2px solid rgb(var(--second-color));
+    border-radius: 7px;
+    background-color: rgb(var(--third-color));
+    color: rgb(var(--second-color));
+    cursor: pointer;
+}
+
+.prev-next button:hover {
+    background-color: rgb(var(--second-color));
+    color: rgb(var(--third-color))
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+    background-color: rgba(var(--first-accent), 0.40);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot:hover, .dot.active {
+    background-color: rgb(var(--first-accent));
+    width: 16px;
+    height: 16px;
+}
+
+/* ========================= VIEW: RECOS TEXT / RECO: FORM TEXT ========================= */
+#for-recos {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#reco-container {
+    padding: 75px 0;
+    border-top: 4px solid rgb(var(--second-color));
+}
+
+#reco-container h3, #form-text h3 {
+    font-family: var(--main-font);
+    font-size: 4rem;
+    font-weight: normal;
+    color: rgb(var(--first-color));
+    margin: 0;
+}
+
+#reco-container p, #form-text p {
+    font-family: var(--third-font);
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: rgb(var(--first-accent));
+    margin: 0;
+    padding: 10px 250px 0 250px;
+}
+
+/* ========================= RECOMMENDATION: TABLE ========================= */
+#recommendations {
+    padding: 90px 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 170px;
+    border-bottom: 4px solid rgb(var(--second-color));
+}
+
+table {
+    font-size: 1.3rem;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 70%;
+    font-family: var(--third-font);
+    box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+}
+
+caption {
+    font-size: 5rem;
+    font-family: var(--main-font);
+    color: rgb(var(--first-color));
+    text-align: left;
+    border-bottom: 3px solid rgb(var(--second-color));
+    margin-bottom: 30px;
+}
+
+th, td {
+    font-family: var(--third-font);
+    border: 1px solid rgb(var(--second-color));
+    padding: 2%;
+    color: rgb(var(--third-color));
+}
+
+.main-color {
+    background-color: rgb(var(--first-color));
+    font-family: var(--third-font);
+    font-size: 1.5rem;
+}
+
+.third-accent {
+    background-color: rgba(var(--third-accent), 0.95);
+}
+
+.second-accent {
+    background-color: rgba(var(--second-accent), 0.95);
+}
+
+table tr th {
+    border-top: none;
+}
+
+table .third-accent:last-child td {
+    border-bottom: none;
+}
+
+table .main-color th:first-child {
+    border-top-left-radius: 70px;
+    border-left: none;
+}
+
+table tr td:first-child {
+    border-left: none;
+}
+
+table tr td:last-child {
+    border-right: none;
+}
+
+table .main-color th:last-child {
+    border-top-right-radius: 70px;
+    border-right: none;
+}
+
+table .third-accent:last-child td:first-child {
+    border-bottom-left-radius: 70px;
+}
+
+table .third-accent:last-child td:last-child {
+    border-bottom-right-radius: 70px;
+}
+
+/* ========================= RECOMMENDATION: FORM ========================= */
+#form-text {
+    text-align: center;
+    margin: 60px 0 30px 0;
+}
+
+#form-text p {
+    padding: 15px 550px;
+}
+
+form {
+    margin: 20px 300px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding: 20px 0 20px 200px;
+    border-color: rgb(var(--second-color));
+    border-radius: 25px;
+}
+
+.comments, .email {
+    font-family: var(--third-font);
+    font-size: 1.5rem;
+    color: rgb(var(--first-color));
+    margin: 20px 0;
+}
+
+#comments, #email {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: rgba(var(--first-accent), 0.10);
+    box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+#email {
+    width: 100%;
+    height: 50px;
+}
+
+#form-buttons {
+    padding: 10px;
+}
+
+#reset, #submit {
+    background-color: rgb(var(--first-accent));
+    color: rgb(var(--third-color));
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: var(--third-font);
+}
+
+#reset:hover, #submit:hover, .view-reco-btn button:hover {
+    background-color: rgba(var(--third-accent), .60);
+    color: rgb(var(--first-color));
+}
+
+/* ========================================================================== */
+/* MEDIA QUERY FOR DESKTOP VIEWPORT */
+@media screen and (min-width: 1015px), print {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile-nav, .tablet-cam, .recos-list {
+        display: none;
+    }
+}
+
+/* ========================================================================== */
+/* MEDIA QUERY FOR TABLET VIEWPORT */
+@media screen and (min-width: 630px) and (max-width: 1014px), print {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile, .mobile-nav, .recos-list {
+        display: none;
+    }
+
+    /* ========================= NAVIGATION ========================= */
+    nav {
+        right: 20px;
+    }
+
+    nav li {
+        font-size: 1.7rem;
+    }
+
+    /* ========================= FOOTER ========================= */
+    #footer-left {
+        padding-left: 50px;
+    }
+
+    #footer-right {
+        padding: 40px 20px 0 0;
+    }
+
+    #footer-logo h3 {
+        font-size: 4rem;
+        margin-top: 25px;
+    }
+    
+    #footer-logo p {
+        margin-left: 15px;
+        font-size: 1rem;
+    }
+    
+    #footer-right p {
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+        margin-left: 40px;
+    }
+    
+    #copyright p {
+        font-size: 0.80rem;
+        padding-top: 5px;
+        margin-left: 2px;
+    }
+    
+    #socials {
+        display: flex;
+        gap: 25px;
+        margin-right: 30px;
+    }
+
+    #socials img {
+        width: 27px;
+        height: 27px;
+        margin-right: 10px;
+    }
+
+    /* ========================= INDEX: INTRO VIDEO & PICTURES =========================*/
+    #intro-vid {
+        margin-top: 170px;
+    }
+    
+    video {
+        display: none;
+    }
+
+    .tablet-cam {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        box-shadow: 3px 5px 5px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    /* ========================= INDEX: DESCRIPTION =========================*/
+    #about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+    }
+    
+    #about h1 {
+        text-shadow: 5px 4px rgba(0,0,0, .25);
+        color: rgb(var(--first-color));
+        font-size: 6.5rem;
+        margin: 0;
+    }
+    
+    #about p {
+        font-size: 1.5rem;
+        color: rgb(var(--first-accent));
+        margin: 0;
+        max-width: 50%;
+        padding: 30px 10px 30px 20px;
+    }
+    
+    /* ========================= INDEX: TOP 3 LISTS =========================*/
+    #top-three {
+        padding: 50px 25px 0 0;
+    }
+
+    .cam-container {
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin: 0 1%;
+    }
+
+    .cam {
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+        padding-left: 35px;
+    }
+
+    .cam-text {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cam-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .cam-text h4 {
+        font-size: 1.2rem;
+    }
+
+    .cam-text p {
+        font-size: 1rem;
+    }
+
+    /* ========================= VIEW: TAGLINE ========================= */
+    #tagline h1 {
+        font-size: 5.5rem;
+        padding-top: 280px;
+        margin: 0;
+    }
+    
+    #tagline h2 {
+        font-size: 2.5rem;
+    }
+
+    /* ========================= VIEW: CAMERA LIST ========================= */
+    .camera-container {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+
+    /* ========================= VIEW: RECOS TEXT / RECO: FORM TEXT ========================= */
+    #reco-container p, #form-text p {
+        padding: 10px 100px 0 100px;
+    }
+
+    /* ========================= RECOMMENDATION: TABLE ========================= */
+    table {
+        font-size: 1.2rem;
+        width: 87%;
+    }
+    
+    caption {
+        font-size: 3.5rem;
+    }
+
+    th {
+        font-size: 1.2rem;
+    }
+
+    /* ========================= RECOMMENDATION: FORM ========================= */
+    form {
+        margin: 20px 80px;
+    }
+
+    #form-text h3 {
+        font-size: 2.3rem;
+    }
+
+    #form-text p {
+        font-size: 1.1rem;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 7px 0 7px 50px;
+    }
+
+    .comments, .email {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    #email {
+        max-width: 70%;
+        height: 50px;
+    }
+    
+    #comments, #email {
+        margin: 7px 0;
+        padding: 7px;
+    }
+
+    #form-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+}
+
+/* ========================================================================== */
+/* MEDIA QUERY FOR MOBILE VIEWPORT */
+@media screen and (max-width: 629px), print {
+    .mobile-nav {
+        display: block;
+    }
+
+    #menu, .tablet-desktop, .tablet-cam, .recos-table {
+        display: none;
+    }
+
+    /* ========================= HEADER & NAVIGATION ========================= */
+    header {
+        height: 200px;
+        top: 0;
+        background-color: rgb(var(--second-color));
+    }
+    
+    header a img {
+        display: block;
+        margin: 0 auto; 
+        padding: 0;
+    }
+    
+    .mobile-nav a  {
+        font-size: 2.2rem;
+        padding: 3%;
+        display: block;
+        color: rgb(var(--third-color));
+        font-family: var(--main-font);
+        text-decoration: none;
+    }
+
+    .mobile-nav {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        right: 0;
+        top: 0;
+    }
+
+    .mobile-nav #menu a {
+        background-color: rgb(var(--second-color));
+    }
+
+    .mobile-nav #menu a:last-of-type {
+        border-bottom: 3px solid rgb(var(--first-color));
+    }
+
+    .mobile-nav .menu-icon {
+        font-size: 3rem;
+        color: rgb(var(--first-color));
+    }
+
+    .mobile-nav a.menu-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+    
+    /* ========================= FOOTER ========================= */
+    #footer-left {
+        padding-left: 27px;
+    }
+
+    #footer-right {
+        padding: 50px 20px 0 0;
+    }
+
+    #footer-logo h3 {
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+    
+    #footer-logo p {
+        margin-left: 5px;
+        font-size: .7rem;
+    }
+    
+    #footer-right p {
+        font-size: 1rem;
+        padding-bottom: 5px;
+        margin-left: 45px;
+    }
+    
+    #copyright p {
+        font-size: 0.7rem;
+        padding-top: 5px;
+        margin-left: 3px;
+    }
+    
+    #socials {
+        display: flex;
+        gap: 15px;
+        margin-left: 40px;
+    }
+
+    #socials img {
+        width: 15x;
+        height: 15px;
+    }
+
+    /* ========================= INDEX: INTRO VIDEO & PICTURES =========================*/
+    video {
+        display: none;
+    }
+
+    /* ========================= INDEX: DESCRIPTION =========================*/
+    #about {
+        margin-top: 0;
+    }
+
+    #about h1 {
+        font-size: 4.5em;
+        margin: 0;
+    }
+    
+    #about p {
+        font-size: 1.2rem;
+        margin: 5px;
+        padding: 30px;
+    }
+
+     /* ========================= INDEX: TOP 3 LISTS =========================*/
+     .top-list {
+        width: 95%; 
+        margin: 0 10px;
+    }
+
+     .top-list h4 {
+        border-bottom: 2px solid rgb(var(--first-color));
+     }
+
+     #trends, #affordable {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cam-container {
+        width: 95%;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .cam {
+        width: 85%;
+        height: auto;
+        margin-bottom: 10px;
+        padding-left: 35px;
+    }
+
+    .cam-text {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cam-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .cam-text h4 {
+        font-size: 1rem;
+        border-bottom: none;
+    }
+
+    .cam-text p {
+        font-size: 0.8rem;
+        padding-bottom: 5px
+    }
+
+    .view-reco-btn {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .view-reco-btn button {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    /* ========================= VIEW: TAGLINE ========================= */
+    #tagline-container {
+        height: 70vh;
+    }
+
+    #tagline h1 {
+        font-size: 2.7rem;
+        padding-top: 200px;
+        margin: 0;
+    }
+    
+    #tagline h2 {
+        font-size: 1.2rem;
+    }
+
+    /* ========================= VIEW: CAMERA LIST ========================= */
+    .camera-container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        gap: 40px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    #prevBtn, #nextBtn {
+        font-size: .8rem;
+    }
+    
+    #prevBtn {
+        margin: 40px 0 0 20px;
+    }
+    
+    #nextBtn {
+        margin: 40px 20px 0 0;
+    }
+    
+    .dots {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ========================= VIEW: RECOS TEXT / RECO: FORM TEXT ========================= */
+
+    #recommendations {
+        padding: 90px 20px 40px 20px;
+    }
+
+    #reco-container h3, #form-text h3 {
+        font-size: 2rem;
+    }
+
+    .recos-list h4, .recos-list h5 {
+        font-family: var(--main-font);
+        color: rgb(var(--first-color));
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .recos-list h4 {
+        font-size: 2.3rem;
+        border-bottom: 3px solid rgb(var(--second-color));
+        margin-bottom: 30px;
+    }
+
+    .recos-list h5 {
+        font-size: 1.2rem;
+    }
+
+    .recos-list ul {
+        text-align: left;
+        color: rgb(var(--second-color));
+        margin-bottom: 30px;
+    }
+
+    .recos-list ul li {
+        padding-bottom: 10px;
+    }
+
+    #reco-container p, #form-text p {
+        font-family: var(--third-font);
+        font-size: .9rem;
+        font-weight: normal;
+        color: rgb(var(--first-accent));
+        margin: 0;
+        padding: 0 50px;
+    }
+
+    .view-reco-btn {
+        padding: 20px;
+        margin: 0;
+    }
+    /* ========================= RECOMMENDATION: FORM ========================= */
+    .recos-box {
+        background-color: rgba(var(--second-accent), 0.10);
+        padding: 10px 10px 0 10px;
+        border-radius: 12px;
+    }
+    
+    form {
+        margin: 20px 5px;
+        padding: 0;
+    }
+
+    textarea {
+        max-width: 70%;
+        height: 150px;
+    }
+    #form-text p {
+        font-size: 1rem;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 7px 0 7px 5px;
+        margin: 0;
+    }
+
+    .comments, .email {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    #comments, #email {
+        font-size: .8rem;
+    }
+
+    #email {
+        max-width: 80%;
+        height: 50px;
+    }
+
+    #reset, #submit {
+        font-size: .8rem;
+    }
+}

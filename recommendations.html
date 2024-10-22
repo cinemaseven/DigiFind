@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>DigiFind</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale-1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Habibi&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"/>
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <!-- MOBILE NAV -->
+            <nav class="mobile-nav">
+                <div id="menu">
+                    <a href="index.html">About</a>
+                    <a href="view.html">View All</a>
+                    <a href="recommendations.html">Recommendations</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()"><div>&#9776;</div></a>
+            </nav>
+
+            <!-- HEADER LOGO -->
+            <header id="digifind-logo">
+                <a href="index.html">
+                    <img src="images/digifind-logo.png" alt="DigiFind Logo"/>
+                </a>
+            </header>
+
+        <!-- HEADER LOGO -->
+        <header id="digifind-logo">
+            <a href="index.html">
+                <img src="images/digifind-logo.png" alt="DigiFind Logo"/>
+            </a>
+        </header>
+
+
+            <!-- TABLET & DESKTOP NAV -->
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="view.html">View All</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                </ul>
+            </nav>
+
+            <!-- MAIN -->
+            <main>
+                <!-- TABLE -->
+                <section id="recommendations">
+                    <!-- <h1>Recommendations</h1> -->
+                    <div class="recos-table">
+                        <table> <!-- START of the table -->
+                            <caption>Recommendations</caption>
+                            <tr class="main-color"> <!-- ROW 1 -->
+                                <th>BEST FOR BEGINNERS & BUDGET-FRIENDLY OPTIONS</th>
+                                <th>BEST FOR TRAVEL & PORTABILITY</th>
+                                <th>BEST FOR VLOGGING & CONTENT CREATION</th>
+                            </tr>
+                            <tr class="third-accent"> <!-- ROW 2 -->
+                                <td>Nikon D3500</td>
+                                <td>Sony RX100 VII</td>
+                                <td>Sony ZV-1</td>
+                            </tr>
+                            <tr class="second-accent"> <!-- ROW 3 -->
+                                <td>Canon IXUS 125 HS</td>
+                                <td>Canon PowerShot SX740 HS</td>
+                                <td>Canon EOS M200</td>
+                            </tr>
+                            <tr class="third-accent"> <!-- ROW 4 -->
+                                <td>Kodak PIXPRO FZ55</td>
+                                <td>Fujifilm XF10</td>
+                                <td>Panasonic Lumix G100</td>
+                            </tr>
+                            <tr class="second-accent"> <!-- ROW 5 -->
+                                <td>Olympus PEN E-PL10</td>
+                                <td>Olympus OM-D E-M10 Mark IV</td>
+                                <td>Sony A6100</td>
+                            </tr>
+                            <tr class="third-accent"> <!-- ROW 6 -->
+                                <td>Panasonic Lumix DC-GF10</td>
+                                <td>Ricoh GR IIIx</td>
+                                <td>Akaso Brave 7 LE</td>
+                            </tr>
+                        </table> <!-- END of the table -->
+                    </div>
+
+                    <div class="recos-list">
+                        <h4>Recommendations</h4>
+                        <div class="recos-box">
+                            <h5>BEST FOR BEGINNERS & BUDGET-FRIENDLY OPTIONS</h5>
+                            <ul>
+                                <li>Nikon D3500</a></li>
+                                <li>Canon IXUS 125 HS</li>
+                                <li>Kodak PIXPRO FZ55</li>
+                                <li>Olympus PEN E-PL10</li>
+                                <li>Panasonic Lumix DC-GF10</li>
+                            </ul>
+                        </div>
+
+                        <div class="recos-box">
+                            <h5>BEST FOR TRAVEL & PORTABILITY</h5>
+                            <ul>
+                                <li>Sony RX100 VII</li>
+                                <li>Canon PowerShot SX740 HS</li>
+                                <li>Fujifilm XF10</li>
+                                <li>Olympus OM-D E-M10 Mark IV</li>
+                                <li>Ricoh GR IIIx</li>
+                            </ul>
+                        </div>
+
+                        <div class="recos-box">
+                            <h5>BEST FOR VLOGGING & CONTENT CREATION</h5>
+                            <ul>
+                                <li>Sony ZV-1</li>
+                                <li>Canon EOS M200</li>
+                                <li>Panasonic Lumix G100</li>
+                                <li>Sony A6100</li>
+                                <li>Akaso Brave 7 LE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FORM -->
+                <section id="form">
+                    <div id="form-text">
+                        <h3>Can't find what you're looking for?</h3>
+                        <p>Leave a comment and Subscribe and we will help you look for the camera of your dreams! You can also get updates about the new releases and promos!</p>
+                    </div>
+                    <form class="form-container">
+                        <fieldset>
+                            <!-- COMMENTS -->
+                            <div class="comments">
+                                <label for="comments" class="comments">Comments / Suggestions:</label><br>
+                                <textarea id="comments" placeholder="I am looking for..." rows="7" cols="55"></textarea>
+                            </div>
+                            <!-- EMAIL -->
+                            <div class="email">
+                                <label for="email" class="email">Email:</label><br>
+                                <input type="email" id="email" name="email" placeholder="username@gmail.com">
+                                <!-- FORM BUTTONS -->
+                                <div id="form-buttons">
+                                    <input type="reset" id="reset" value="Reset" class="btn">
+                                    <input type="submit" id="submit" value="Submit" class="btn">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div id="footer-container">
+                <div id="footer-left">
+                    <div id="footer-logo">
+                        <h3>DigiFind</h3>
+                        <p>Discover your perfect shot.</p>
+                    </div>
+                </div>
+    
+                <div id="footer-right">
+                    <p>Contact Us.</p>
+                    <div id="socials">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/facebook-logo.png" alt="Facebook Logo">
+                        </a>
+        
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/instagram-logo.png" alt="Instagram Logo">
+                        </a>
+        
+                        <a href="tel:09999999999" target="_blank">
+                            <img src="images/phone-logo.png" alt="Telephone Logo">
+                        </a>
+        
+                        <a href="mailto:wonuforhw7@gmail.com" target="_blank">
+                            <img src="images/email-logo.png" alt="Email Logo">
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        <p>&copy;2024 DigiFind. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>

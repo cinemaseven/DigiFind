@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>DigiFind</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Habibi&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"/>
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <!-- MOBILE NAV -->
+            <nav class="mobile-nav">
+                <div id="menu">
+                    <a href="index.html">About</a>
+                    <a href="view.html">View All</a>
+                    <a href="recommendations.html">Recommendations</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()"><div>&#9776;</div></a>
+            </nav>
+
+            <!-- HEADER LOGO -->
+            <header id="digifind-logo">
+                <a href="index.html">
+                    <img src="images/digifind-logo.png" alt="DigiFind Logo"/>
+                </a>
+            </header>
+
+            <!-- TABLET & DESKTOP NAV -->
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="view.html">View All</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                </ul>
+            </nav>
+
+            <!-- MAIN -->
+            <main>
+                <section id="intro-vid">
+                    <div id="intro-container">
+                        <video controls poster="images/video-poster.png"> 
+                            <source src="media/digifind-video.mp4" type="video/mp4"/>
+                            <source src="media/digifind-video.webm" type="video/webm"/>
+                            <track src="media/captions.vtt" kind="captions" srclang="en-us" label="English"/>
+                            <track src="media/descriptions.vtt" kind="descriptions" srclang="en-us" label="English Descriptions"/>
+                            <p>Your browser does not support the video element.</p>
+                        </video>
+                        <img src="images/digicam-collection.png" alt="DigiCam Collection" class="tablet-cam">
+                    </div>
+                </section>
+
+                <!-- ABOUT DIGIFIND -->
+                <section id="about">
+                    <h1>DigiFind</h1>
+                    <p>DigiFind is designed to simplify your search for the perfect digital camera. Whether it is your hobby or you're a professional photographer, DigiFind provides you with a curated selection of the best digital cameras available today. Our platform connects you with reliable stores and sites, offering the old and new releases, and trends, ensuring you make a well-informed purchase. Explore a range of cameras, compare features, and find affordable options that suit your specific needs—all in one place.</p>
+                </section>
+
+                <!-- LATEST AND MOST AFFORDABLE DIGIS -->
+                <section id="top-three">
+                    <div class="top-list">
+                        <h4>Top 3 Latest DigiTrends</h4>
+                        <div id="trends">
+                            <div class="cam-container cam1">
+                                <a href="https://www.henryscameraphoto.com/Sony-A7M4-Kit?search=Sony%20A7%20IV" target="_blank">
+                                    <img src="images/cam-sonyA7IV.png" alt="Sony A7 IV Mirrorless Camera" class="cam">
+                                    <div class="cam-text">
+                                        <h2>Sony A7 IV</h2>
+                                        <h4>(PHP 144,999.00)</h4>
+                                        <p>The best hybrid mirrorless camera on the market. It is a modern all-rounder that has class-leading autofocus, impressive image and video quality features in one versatile body.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cam-container cam2">
+                                <a href="https://www.henryscameraphoto.com/Canon-EOS-R100-1845mm?search=Canon%20EOS%20R10" target="_blank">
+                                    <img src="images/cam-canonEOSR10.png" alt="Canon EOS R10" class="cam">
+                                    <div class="cam-text">
+                                        <h2>Canon EOS R10</h2>
+                                        <h4>(PHP 37,598.00)</h4>
+                                        <p>Up and rising camera, perfect for beginners. It has class-leading Dual Pixel autofocus system and continuous shooting speed, making it ideal in capturing fast-moving subjects. It is perfect for anyone looking to explore their creative potential in a user-friendly package.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cam-container cam3">
+                                <a href="https://tinyurl.com/bdd68n2p" target="_blank">
+                                    <img src="images/cam-fujifilmX100VI.png" alt="Fujifilm X100VI" class="cam">
+                                    <div class="cam-text">
+                                        <h2>Fujifilm X100VI</h2>
+                                        <h4>(PHP 103,990.00)</h4>
+                                        <p>It is a standout compact camera known for its exceptional image quality and classic design. The hybrid viewfinder allows for seamless switching between optical and electronic views, enhancing the shooting experience. It excels in various conditions, from street photography to portraits.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="top-list">
+                        <h4>Top 3 Most Affordable</h4>
+                        <div id="affordable">
+                            <div class="cam-container cam1">
+                                <a href="https://ph.priceme.com/Samsung-DV300F/p-886280352.aspx" target="_blank">
+                                    <img src="images/cam-samsungDV300F.png" alt="Samsung DV300F" class="cam">
+                                    <div class="cam-text">
+                                        <h2>Samsung DV300F</h2>
+                                        <h4>(PHP 7,850.00)</h4>
+                                        <p>It has dual LCD screens, including a front-facing display, make it ideal for selfies, while the built-in Wi-Fi allows for easy sharing of photos on the go. Despite its age, the DV300F remains a solid choice for casual photographers looking for a compact, affordable camera with reliable performance and modern connectivity.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cam-container cam2">
+                                <a href="https://ph.priceme.com/Canon-IXUS-125-HS/p-886091076.aspx" target="_blank">
+                                    <img src="images/cam-canonIXUS125HS.png" alt="Canon IXUS 125 HS" class="cam">
+                                    <div class="cam-text">
+                                        <h2>Canon IXUS 125 HS</h2>
+                                        <h4>(PHP 9,950.00)</h4>
+                                        <p>Is a sleek and compact point-and-shoot camera known for its portability, ease of use, and delivery of impressive image quality for its size. It has a Smart Auto mode, ensuring great shots in any lighting condition. Though released in 2012, it remains an ideal camera for casual photographers.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cam-container cam3">
+                                <a href="https://ph.priceme.com/Olympus-SP-620-UZ/p-886289820.aspx#product-content" target="_blank">
+                                    <img src="images/cam-olympusSP620UZ.png" alt="Olympus SP-620UZ" class="cam">
+                                    <div class="cam-text">
+                                        <h2>Olympus SP-620UZ</h2>
+                                        <h4>(PHP 9,250.00)</h4>
+                                        <p>Years after its release, the SP-620UZ remains a solid choice for anyone looking for a budget-friendly camera with powerful zoom and reliable performance. It stands out for its impressive 21x optical zoom, allowing users to capture distant subjects with ease. Its 16 MP sensor and built-in image stabilization ensure sharp, vibrant photos, even at full zoom.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CHANNGE TO A BUTTON -->
+                    <div class="view-reco-btn">
+                        <a href="view.html">
+                            <button>View All</button>
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div id="footer-container">
+                <div id="footer-left">
+                    <div id="footer-logo">
+                        <h3>DigiFind</h3>
+                        <p>Discover your perfect shot.</p>
+                    </div>
+                </div>
+    
+                <div id="footer-right">
+                    <p>Contact Us.</p>
+                    <div id="socials">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/facebook-logo.png" alt="Facebook Logo">
+                        </a>
+        
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/instagram-logo.png" alt="Instagram Logo">
+                        </a>
+        
+                        <a href="tel:09999999999" target="_blank">
+                            <img src="images/phone-logo.png" alt="Telephone Logo">
+                        </a>
+        
+                        <a href="mailto:wonuforhw7@gmail.com" target="_blank">
+                            <img src="images/email-logo.png" alt="Email Logo">
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        <p>&copy;2024 DigiFind. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>

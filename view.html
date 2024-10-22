@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>DigiFind</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale-1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Habibi&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"/>
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png"/>
+    </head>
+
+    <body>
+        <div id="container">
+            <!-- MOBILE NAV -->
+            <nav class="mobile-nav">
+                <div id="menu">
+                    <a href="index.html">About</a>
+                    <a href="view.html">View All</a>
+                    <a href="recommendations.html">Recommendations</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()"><div>&#9776;</div></a>
+            </nav>
+
+            <!-- HEADER LOGO -->
+            <header id="digifind-logo">
+                <a href="index.html">
+                    <img src="images/digifind-logo.png" alt="DigiFind Logo"/>
+                </a>
+            </header>
+
+            <!-- TABLET & DESKTOP NAV -->
+            <nav class="tablet-desktop">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="view.html">View All</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                </ul>
+            </nav>
+
+            <!-- MAIN -->
+            <main>
+                <section id="tagline">
+                    <div id="tagline-container">
+                        <h1>Discover your <b>PERFECT SHOT!</b></h1>
+                        <h2>- Choose the camera, capture the moment -</h2>
+                    </div>
+                </section>
+
+                <section id="camera-selection" class="camera-container">
+                    <!-- CAMERA ITEMS (FROM JS) WILL SHOW HERE -->
+                </section>
+
+                <!-- Pagination Buttons -->
+                <div class="prev-next">
+                    <button id="prevBtn" onclick="previousPage()">&#129168; Previous</button>
+                    <div id="dot-indicator">
+                        <span class="dot" onclick="goToPage(0)"></span>
+                        <span class="dot" onclick="goToPage(1)"></span>
+                        <span class="dot" onclick="goToPage(2)"></span>
+                    </div>
+                    <button id="nextBtn" onclick="nextPage()">Next &#129170;</button>
+                </div>
+
+                <section id="for-recos">
+                    <div id="reco-container">
+                        <h3>Not sure what to choose?</h3>
+                        <p>Finding the right camera can be overwhelming with so many options out there, but we’re here to help! Whether you're a professional photographer  or just getting started, we offer tailored recommendations to guide you in selecting the perfect camera. Explore features, compare prices, and get advice to make a well-informed decision that suits your creative needs and budget.</p>
+                    </div>
+
+                    <div class="view-reco-btn">
+                        <a href="recommendations.html">
+                            <button>Recommendations</button>
+                        </a>
+                    </div>
+                </section>
+                
+            </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div id="footer-container">
+                <div id="footer-left">
+                    <div id="footer-logo">
+                        <h3>DigiFind</h3>
+                        <p>Discover your perfect shot.</p>
+                    </div>
+                </div>
+    
+                <div id="footer-right">
+                    <p>Contact Us.</p>
+                    <div id="socials">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="images/facebook-logo.png" alt="Facebook Logo">
+                        </a>
+        
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="images/instagram-logo.png" alt="Instagram Logo">
+                        </a>
+        
+                        <a href="tel:09999999999" target="_blank">
+                            <img src="images/phone-logo.png" alt="Telephone Logo">
+                        </a>
+        
+                        <a href="mailto:wonuforhw7@gmail.com" target="_blank">
+                            <img src="images/email-logo.png" alt="Email Logo">
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        <p>&copy;2024 DigiFind. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
